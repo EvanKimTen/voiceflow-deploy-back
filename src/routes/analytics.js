@@ -9,7 +9,7 @@ router.post("/api/proxy/top_intents/:userId", async (req, res) => {
     // Define the options for the external API request
     const { startTime, endTime } = req.body.query[0].filter;
     const { API_KEY, PROJECT_ID } = await getUserKeys(req.params.userId);
-
+    console.log(API_KEY + " " + PROJECT_ID)
     const options = {
       method: "POST",
       headers: {
