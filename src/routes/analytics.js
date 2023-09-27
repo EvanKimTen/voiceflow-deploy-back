@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const getUserKeys = require("../middleware/getUserKeys");
-const fetch = require("node-fetch");
 
 // Define a route to handle the specific request
 router.post("/api/proxy/top_intents/:userId", async (req, res) => {
